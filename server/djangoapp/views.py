@@ -17,10 +17,18 @@ logger = logging.getLogger(__name__)
 # Create your views here.
 
 
+
+
 # Create an `about` view to render a static about page
 # def about(request):
 # ...
 
+def about(request):
+    return render(request, 'about.html')
+
+
+def contact(request):
+    return render(request, 'contact.html')
 
 # Create a `contact` view to return a static contact page
 #def contact(request):
