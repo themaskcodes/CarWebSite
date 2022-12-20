@@ -23,6 +23,10 @@ urlpatterns = [
     path(route='', view=views.get_dealerships, name='index'),
     path(route='about/', view=views.about, name='about'),
     path(route='contact/', view=views.contact, name='contact'),
+    path('login/', views.login_request, name='login'),
+    path('logout/', views.logout_request, name='logout'),
+    path('registration/', views.registration_request, name='registration'),
+
 
     #url(r'^about/$', views.about, name='about'),
     #url(r'^contact/$', views.contact, name='contact'),
